@@ -1,0 +1,68 @@
+<html>
+    <body>
+        <h1>Belajar Table</h1>
+        <table>
+            <colgroup>
+                <col style="background-color: yellow;">
+                <col style="background-color: pink;">
+                <col style="background-color: aqua;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Kota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice Robinson</td>
+                    <td>30</td>
+                    <td>New York, USA</td>
+                </tr>
+                <tr>
+                    <td>Bob Marley</td>
+                    <td>25</td>
+                    <td>Los Angeles, USA</td>
+                </tr>
+                <tr>
+                    <td>Charlie Brown</td>
+                    <td>35</td>
+                    <td>Chicago, USA</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td rowspan="2">rowspan 2</td>
+                    <td colspan="2">colspan 2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Sumber Data: Database XYZ</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+<!--
+TAG-TAG PEMBUATAB TABEL
+- tag <table> digunakan untuk membuat tabel, {tanpa tag ini struktur tabel tidak akan ditampilkan, dan semua text akan menjadi 1 baris (wajib)}.
+- tag <thead> digunakan untuk mendefinisikan bagian kepala tabel, {bagian tag ini tidak wajib digunakan seperti tag <table>, jadi fungsinya hanya untuk mengelompokkan konten header}.
+- tag <tbody> digunakan untuk mendefinisikan bagian tubuh tabel, {bagian tag ini juga tidak wajib digunakan seperti tag <table>, jadi fungsinya hanya untuk mengelompokkan konten data}.
+- tag <tfoot> digunakan untuk mendefinisikan bagian kaki tabel, {bagian tag ini juga tidak wajib digunakan seperti tag <table>, jadi fungsinya hanya untuk mengelompokkan konten footer}.
+- tag <tr> digunakan untuk mendefinisikan baris dalam tabel, {tanpa tag ini baris tidak akan dibuat, dan kontennya akan menjadi 1 baris saja (wajib)}.
+- tag <td> digunakan untuk mendefinisikan kolom data dalam tabel, {tanpa ini kolom tidak akan dibuat, dan text yang ada di dalam <tr> tanpa dibungkus <td> tidak akan ditampilkan (wajib)}.
+- tag <th> digunakan untuk mendefinisikan kolom header dalam tabel, {yang membedakan tag ini dengan tag <td> adalah font-weight: bold;, sedangkan <td> tidak}.
+-->
+
+<!--
+TAG-TAG PEMBUATAN KOLOM
+- tag <colgroup> digunakan untuk mengelompokkan kolom, {bagian tag ini hanya boleh berada di dalam tag <table>}.
+- tag <col> digunakan untuk mendefinisikan kolom, {tag ini hanya boleh berada di dalam tag <colgroup>}.
+-->
+
+<!--
+ATRIBUT-ATRIBUT SPAN (PENGGABUNGAN)
+- atribut colspan digunakan untuk menggabungkan beberapa kolom menjadi 1 kolom.
+- atribut rowspan digunakan untuk menggabungkan beberapa baris menjadi 1 baris.
+-->
